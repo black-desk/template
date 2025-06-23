@@ -31,7 +31,6 @@ are open source under the MIT License.
 
 This project complies with the [REUSE specification].
 
-
 You can use [reuse-tool](https://github.com/fsfe/reuse-tool) to generate the
 SPDX list for this project:
 
