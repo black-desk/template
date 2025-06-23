@@ -6,7 +6,7 @@ SPDX-License-Identifier: MIT
 
 # 模板
 
-zh_CN | [en](README.md)
+[en](README.md) | zh_CN
 
 我的个人项目模板
 
