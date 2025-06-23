@@ -38,4 +38,4 @@ SPDX list for this project:
 reuse spdx
 ```
 
-[REUSE Specification]: https://reuse.software/spec-3.3/
+[REUSE specification]: https://reuse.software/spec-3.3/
