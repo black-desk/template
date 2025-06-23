@@ -31,4 +31,3 @@ You can use [reuse-tool](https://github.com/fsfe/reuse-tool) to generate the SPD
 ```bash
 reuse spdx
 ```
-w
