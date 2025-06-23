@@ -76,8 +76,8 @@ function main() {
 		exit 1
 	fi
 
-	sed -i "s/# Template/$project_name/g" README.md
-	sed -i "s/# 模版/$project_name/g" README.zh_CN.md
+	sed -i '' "s/^#\ Template/#\ $project_name/g" README.md
+	sed -i '' "s/^#\ 模板/#\ $project_name/g" README.zh_CN.md
 }
 
 main "$@"
