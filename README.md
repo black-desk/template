@@ -77,19 +77,19 @@ My personal project template
 
 <!-- TODO: Add project usage instructions -->
 
-Use gh to create a repository from the template:
+1. Use gh to create a repository from the template:
 
-```bash
-gh repo create --public --template black-desk/template
-```
+   ```bash
+   gh repo create --public --template black-desk/template
+   ```
 
-Edit project files, fill in content, and remove all `TODO` comments.
+2. Edit project files, fill in content, and remove all `TODO` comments.
 
-Run the check script to ensure all `TODO` comments have been removed:
+3. Run the check script to ensure all `TODO` comments have been removed:
 
-```bash
-./scripts/ls-todo.sh
-```
+   ```bash
+   ./scripts/ls-todo.sh
+   ```
 
 ## License
 

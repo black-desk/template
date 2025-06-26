@@ -64,7 +64,7 @@ jobs:
     if: always()
     needs:
       - generic
-      # TODO: Uncomment or remove the following lines if you have those jobs
+      # TODO: Uncomment the following lines if you have the respective jobs
       # - autotools
       # - go
       # - rust

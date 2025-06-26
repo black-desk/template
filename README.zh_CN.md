@@ -70,19 +70,19 @@ SPDX-License-Identifier: MIT
 
 <!-- TODO: 添加项目使用说明 -->
 
-使用gh，从模版创建仓库：
+1. 使用gh，从模版创建仓库：
 
-```bash
-gh repo create --public --template black-desk/template
-```
+   ```bash
+   gh repo create --public --template black-desk/template
+   ```
 
-编辑项目文件，填充内容后移除所有的`TODO`。
+2. 编辑项目文件，填充内容后移除所有的`TODO`。
 
-运行检查脚本，确定所有`TODO`均已被移除：
+3. 运行检查脚本，确定所有`TODO`均已被移除：
 
-```bash
-./scripts/ls-todo.sh
-```
+   ```bash
+   ./scripts/ls-todo.sh
+   ```
 
 ## 许可证
 
