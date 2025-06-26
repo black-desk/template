@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# SPDX-FileCopyrightText: Chen Linxuan <me@black-desk.cn>
+# SPDX-FileCopyrightText: 2025 Chen Linxuan <me@black-desk.cn>
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
@@ -24,11 +24,11 @@ CURRENT_SOURCE_FILE_NAME="$(basename -- "$CURRENT_SOURCE_FILE_PATH")"
 USAGE="$CURRENT_SOURCE_FILE_NAME
 
 Description:
-  Tool to start using this template
+  Tool to list TODO items in the current project.
 
 Usage:
   $CURRENT_SOURCE_FILE_NAME -h
-  $CURRENT_SOURCE_FILE_NAME [YOUR_PROJECT_NAME]
+  $CURRENT_SOURCE_FILE_NAME
 
 Options:
   -h   Show this screen."
@@ -60,24 +60,11 @@ function main() {
 	done
 	shift $((OPTIND - 1))
 
-	if [ $# -ne 1 ]; then
-		log "[ERROR] Missing project name"
-		exit 1
-	fi
-
-	local project_name="$1"
-	if [ -z "$project_name" ]; then
-		log "[ERROR] Project name cannot be empty"
-		exit 1
-	fi
-
-	if ! command -v sed >/dev/null; then
-		log "[ERROR] sed command not found, please install it"
-		exit 1
-	fi
-
-	sed -i '' "s/^#\ Template/#\ $project_name/g" README.md
-	sed -i '' "s/^#\ 模板/#\ $project_name/g" README.zh_CN.md
+	grep \
+		--recursive \
+		--line-number \
+		--exclude=./scripts/ls-todo.sh \
+		--extended-regexp 'TODO:|FIXME:' .
 }
 
 main "$@"
