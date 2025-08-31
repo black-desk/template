@@ -66,7 +66,7 @@ en | [zh_CN](README.zh_CN.md)
 
 > [!WARNING]
 >
-> This English README is translated from the Chinese version using AI and may
+> This English README is translated from the Chinese version using LLM and may
 > contain errors.
 
 <!-- TODO: Add project description -->
