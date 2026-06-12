@@ -63,7 +63,8 @@ function main() {
 	grep \
 		--recursive \
 		--line-number \
-		--exclude=./scripts/ls-todo.sh \
+		--exclude="$CURRENT_SOURCE_FILE_NAME" \
+		--exclude-dir=.git \
 		--extended-regexp 'TODO:|FIXME:' .
 }
 
